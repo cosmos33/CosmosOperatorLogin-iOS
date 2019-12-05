@@ -1,0 +1,6 @@
+framework module Pods_LoginSDKUITests {
+  umbrella header "Pods-LoginSDKUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

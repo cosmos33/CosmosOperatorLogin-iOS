@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zid-Bn-D1x">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kuy-YH-eQt">
+            <objects>
+                <navigationController id="zid-Bn-D1x" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6f2-Te-HgF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LPz-1S-ppP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fo9-X5-asm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-952" y="163"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehx-aJ-JJL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="root_logo" translatesAutoresizingMaskIntoConstraints="NO" id="pyU-fx-c0Z">
+                                <rect key="frame" x="153" y="125" width="108" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="Hpc-Kp-w5m"/>
+                                    <constraint firstAttribute="width" constant="108" id="jgW-xB-eib"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="root_mobile" translatesAutoresizingMaskIntoConstraints="NO" id="u95-3c-3Xh">
+                                <rect key="frame" x="19.5" y="345" width="375" height="525"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一键登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWY-Nc-3Ly">
+                                <rect key="frame" x="158.5" y="243" width="97.5" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="drm-Bq-Wrc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速集成，一键认证本地号码，让用户告别等待" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0s2-7C-53o">
+                                <rect key="frame" x="73" y="286" width="268" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Vbr-xU-9qi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12.5"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ehx-aJ-JJL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4UW-O7-8oF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Ehx-aJ-JJL" secondAttribute="top" constant="88" id="5Eh-zf-5cx"/>
+                            <constraint firstItem="Ehx-aJ-JJL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="8u2-gW-f4P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ehx-aJ-JJL" secondAttribute="trailing" id="GZS-37-ST4"/>
+                            <constraint firstItem="pyU-fx-c0Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="ZN3-BH-hdX"/>
+                            <constraint firstItem="pyU-fx-c0Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aGZ-sF-1Y0"/>
+                            <constraint firstItem="0s2-7C-53o" firstAttribute="top" secondItem="WWY-Nc-3Ly" secondAttribute="bottom" constant="14" id="kCQ-lz-KDu"/>
+                            <constraint firstItem="WWY-Nc-3Ly" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kqt-qu-a7P"/>
+                            <constraint firstItem="WWY-Nc-3Ly" firstAttribute="top" secondItem="pyU-fx-c0Z" secondAttribute="bottom" constant="10" id="slG-nS-5Ya"/>
+                            <constraint firstItem="0s2-7C-53o" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wOp-Et-PPV"/>
+                            <constraint firstItem="u95-3c-3Xh" firstAttribute="top" secondItem="0s2-7C-53o" secondAttribute="bottom" constant="8" id="yni-ji-pB6"/>
+                            <constraint firstItem="u95-3c-3Xh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zHP-PU-uMN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9g6-qn-hlY"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="Ehx-aJ-JJL" id="fLZ-Zg-1z7"/>
+                        <outlet property="mobileImgView" destination="u95-3c-3Xh" id="XmS-Bv-rsW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="163.39285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="root_logo" width="108" height="107.5"/>
+        <image name="root_mobile" width="375" height="525"/>
+    </resources>
+</document>

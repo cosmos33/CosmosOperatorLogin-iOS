@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-LoginSDK/Pods-LoginSDK-resources.sh
+${PODS_ROOT}/../Product/bundle/EAccountOpenPageResource.bundle
+${PODS_ROOT}/../Product/bundle/TYRZResource.bundle
+${PODS_ROOT}/../Product/bundle/uni_account_login_res.bundle

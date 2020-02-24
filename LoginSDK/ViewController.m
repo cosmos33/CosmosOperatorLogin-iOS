@@ -146,8 +146,9 @@
 }
 
 - (void)configTelecomLoginVC{
+    
     EAccountOpenPageConfig *model = [[EAccountOpenPageConfig alloc]init];
-    model.nibNameOfLoginVC = @"EAccountAuthVC_dynamic";
+    model.nibNameOfLoginVC = @"EAccountAuthVC";
     model.EAccountBundleName = @"EAccountOpenPageResource";
 
     model.logBtnHeight = 44;

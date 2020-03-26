@@ -55,44 +55,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00AB1173E66963BFD3AB58EFF474B8FD /* TYRZSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TYRZSDK.framework; path = Product/framework/TYRZSDK.framework; sourceTree = "<group>"; };
-		1167EBD9FCB35CC68303FB2B4030284B /* uni_account_login_res.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = uni_account_login_res.bundle; path = Product/bundle/uni_account_login_res.bundle; sourceTree = "<group>"; };
-		1E713AC206BB39485D389CDDA94F5A49 /* account_login_sdk_core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = account_login_sdk_core.framework; path = Product/framework/account_login_sdk_core.framework; sourceTree = "<group>"; };
+		1BB3758C63E0CA561BD7BB53D4EFB669 /* CosmosLoginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CosmosLoginSDK.framework; path = Product/framework/CosmosLoginSDK.framework; sourceTree = "<group>"; };
 		21EB8ED3F33D58BFB376E4BD2D0E4560 /* Pods-LoginSDKUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginSDKUITests-Info.plist"; sourceTree = "<group>"; };
 		2A9EC9468126B8CC308085D6E933C252 /* Pods-LoginSDKUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoginSDKUITests-dummy.m"; sourceTree = "<group>"; };
 		2C5AEAC2CDCD047B7C6FD53169C5976E /* Pods-LoginSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginSDKTests.release.xcconfig"; sourceTree = "<group>"; };
-		2F0F0E4469FD0CD0C92FD508B4B41D2E /* CosmosLoginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CosmosLoginSDK.framework; path = Product/framework/CosmosLoginSDK.framework; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3214EC45039FE8ED416E472940550F70 /* Pods-LoginSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		36FB18C0A666F2771C4E73239E2CA636 /* Pods-LoginSDK-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoginSDK-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3BC560340EF883B4889A01B12D50B440 /* Pods-LoginSDKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginSDKUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3E41B2AA61D7F9A6FEA3264F22F7EE98 /* CosmosLoginSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CosmosLoginSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		45D45EC1C523F0125D488AF89C193FE9 /* Pods-LoginSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		4A3021B5A49A08BE2710D8FAB724CE1C /* TYRZResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TYRZResource.bundle; path = Product/bundle/TYRZResource.bundle; sourceTree = "<group>"; };
 		575BC00F676E748D86B9662727FF4AEC /* Pods-LoginSDK-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginSDK-acknowledgements.plist"; sourceTree = "<group>"; };
 		5D1E9B076FAD41AE35AE412CA99A826D /* Pods_LoginSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LoginSDK.framework; path = "Pods-LoginSDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66D1CC93DF0EE1484F46819ECFF40F2C /* EAccountHYSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EAccountHYSDK.framework; path = Product/framework/EAccountHYSDK.framework; sourceTree = "<group>"; };
 		6D73610889618C7874FB130A6FCBCB39 /* Pods_LoginSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LoginSDKTests.framework; path = "Pods-LoginSDKTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7292B065A8C8A83CDDAA770C2EB91DBD /* Pods-LoginSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LoginSDK.modulemap"; sourceTree = "<group>"; };
-		75321AFA7863D3BC2D6EB2EAC674DEB6 /* CosmosLoginSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CosmosLoginSDK.xcconfig; sourceTree = "<group>"; };
+		73B3EA0D336E83215885D0F3FDADE918 /* account_login_sdk_core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = account_login_sdk_core.framework; path = Product/framework/account_login_sdk_core.framework; sourceTree = "<group>"; };
 		7CE263CEB6C984618605FC0C1BD23AA1 /* Pods-LoginSDKUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LoginSDKUITests.modulemap"; sourceTree = "<group>"; };
+		83B73A5D3B6AEB05372E50086F346888 /* CosmosLoginSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CosmosLoginSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8676FABFEF1AD55966CA50FF45C3C8F7 /* Pods-LoginSDKTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoginSDKTests-dummy.m"; sourceTree = "<group>"; };
 		8C17B12A7592974BFEA0321C3FFF0660 /* Pods-LoginSDKTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LoginSDKTests.modulemap"; sourceTree = "<group>"; };
 		8DEFC8B34657113471EAC9C8D802BA79 /* Pods-LoginSDKTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginSDKTests-Info.plist"; sourceTree = "<group>"; };
 		94158F1041A775261DC90D0F89624153 /* Pods-LoginSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginSDK.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DE0966449F96E33AA37D7CCB7829EFA /* TYRZSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TYRZSDK.framework; path = Product/framework/TYRZSDK.framework; sourceTree = "<group>"; };
 		A697E505987B1EFB352C5CEC28A5E547 /* Pods-LoginSDK-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoginSDK-resources.sh"; sourceTree = "<group>"; };
 		A6DBC172EDA1326BACD9191CE2B216C7 /* Pods-LoginSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginSDK-Info.plist"; sourceTree = "<group>"; };
 		AA1C252EC7DACCFEFCE81FD9DB4FB7BE /* Pods-LoginSDKUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoginSDKUITests-umbrella.h"; sourceTree = "<group>"; };
 		B96CC997A70BBF75098D11DBBF12B66F /* Pods-LoginSDKUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoginSDKUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BABEF9A3CD0F93218755E77C579339C1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C4D5A820B49B83FA292CF775DE4E5408 /* CosmosLoginSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CosmosLoginSDK.xcconfig; sourceTree = "<group>"; };
 		C50BB6FDC682BD78BD46AC32C724F0FC /* Pods-LoginSDKUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginSDKUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C8B194E260B01AC433F323840F5237CE /* Pods-LoginSDKTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoginSDKTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C91A48B274912C0A8397DE0A5D7850F6 /* EAccountOpenPageResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = EAccountOpenPageResource.bundle; path = Product/bundle/EAccountOpenPageResource.bundle; sourceTree = "<group>"; };
+		D0F6A48552975F91C336ED21573F6EBB /* uni_account_login_res.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = uni_account_login_res.bundle; path = Product/bundle/uni_account_login_res.bundle; sourceTree = "<group>"; };
 		D2BE098461CFC6D029C0D7CC5E2517BE /* Pods-LoginSDKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginSDKUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DE32EB3A0389F36AC68AEB5189E16897 /* Pods-LoginSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoginSDK-umbrella.h"; sourceTree = "<group>"; };
-		DEFDC512607369172CB8F5C1A9DA2017 /* EAccountOpenPageResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = EAccountOpenPageResource.bundle; path = Product/bundle/EAccountOpenPageResource.bundle; sourceTree = "<group>"; };
-		E0625ACF4E4ABB3E27461BD3BAB50E25 /* TYRZResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TYRZResource.bundle; path = Product/bundle/TYRZResource.bundle; sourceTree = "<group>"; };
 		E6F6E4DD0F8C582C5AFB1ABAE1BA3927 /* Pods-LoginSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoginSDK-dummy.m"; sourceTree = "<group>"; };
 		F0481746AD5317E3342D393E76E56F34 /* Pods-LoginSDKTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginSDKTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F30546389AE0CB9A74113B5C129F8EBB /* Pods_LoginSDKUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LoginSDKUITests.framework; path = "Pods-LoginSDKUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC359DC6D0093480B337C21094A65CA /* EAccountHYSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EAccountHYSDK.framework; path = Product/framework/EAccountHYSDK.framework; sourceTree = "<group>"; };
 		FF6C328686E02D735FCFC999DEEC338B /* Pods-LoginSDKTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoginSDKTests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,13 +125,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		020083C0D0D0BB7C2894A6A8019FDCB8 /* CosmosLoginSDK */ = {
+		090C950D8A4D83BC6320FBEE935A7A76 /* CosmosLoginSDK */ = {
 			isa = PBXGroup;
 			children = (
-				B5AF12D8E6CF528DCB0F787D5484CEFD /* Frameworks */,
-				5AFB9F1A76A854546AE35DB8D2E80922 /* Pod */,
-				DC7FDAB1E68A92F98FA3A64ED65596A4 /* Resources */,
-				BD8AFAD2B332380417FBB12182A31EB5 /* Support Files */,
+				F1CB8F2A242A98B131642F61E217C1AD /* Frameworks */,
+				EE279CF5E000781CD8B01F87B9A07012 /* Pod */,
+				E948313D7EE757A52556ED959775A75A /* Resources */,
+				EA6A97D6C0A478A45C55B24CEF8371E8 /* Support Files */,
 			);
 			name = CosmosLoginSDK;
 			path = ..;
@@ -178,18 +179,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5AFB9F1A76A854546AE35DB8D2E80922 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3E41B2AA61D7F9A6FEA3264F22F7EE98 /* CosmosLoginSDK.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		67D96F7CDF222578B897CC6B5D4324A4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				020083C0D0D0BB7C2894A6A8019FDCB8 /* CosmosLoginSDK */,
+				090C950D8A4D83BC6320FBEE935A7A76 /* CosmosLoginSDK */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -202,26 +195,6 @@
 				497CB4E2D55EF87DF1CD0E82F46F2E80 /* Pods-LoginSDKUITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B5AF12D8E6CF528DCB0F787D5484CEFD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1E713AC206BB39485D389CDDA94F5A49 /* account_login_sdk_core.framework */,
-				2F0F0E4469FD0CD0C92FD508B4B41D2E /* CosmosLoginSDK.framework */,
-				66D1CC93DF0EE1484F46819ECFF40F2C /* EAccountHYSDK.framework */,
-				00AB1173E66963BFD3AB58EFF474B8FD /* TYRZSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD8AFAD2B332380417FBB12182A31EB5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				75321AFA7863D3BC2D6EB2EAC674DEB6 /* CosmosLoginSDK.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Pods/Target Support Files/CosmosLoginSDK";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -268,14 +241,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DC7FDAB1E68A92F98FA3A64ED65596A4 /* Resources */ = {
+		E948313D7EE757A52556ED959775A75A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DEFDC512607369172CB8F5C1A9DA2017 /* EAccountOpenPageResource.bundle */,
-				E0625ACF4E4ABB3E27461BD3BAB50E25 /* TYRZResource.bundle */,
-				1167EBD9FCB35CC68303FB2B4030284B /* uni_account_login_res.bundle */,
+				C91A48B274912C0A8397DE0A5D7850F6 /* EAccountOpenPageResource.bundle */,
+				4A3021B5A49A08BE2710D8FAB724CE1C /* TYRZResource.bundle */,
+				D0F6A48552975F91C336ED21573F6EBB /* uni_account_login_res.bundle */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		EA6A97D6C0A478A45C55B24CEF8371E8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4D5A820B49B83FA292CF775DE4E5408 /* CosmosLoginSDK.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/CosmosLoginSDK";
+			sourceTree = "<group>";
+		};
+		EE279CF5E000781CD8B01F87B9A07012 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				83B73A5D3B6AEB05372E50086F346888 /* CosmosLoginSDK.podspec */,
+				BABEF9A3CD0F93218755E77C579339C1 /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F1CB8F2A242A98B131642F61E217C1AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73B3EA0D336E83215885D0F3FDADE918 /* account_login_sdk_core.framework */,
+				1BB3758C63E0CA561BD7BB53D4EFB669 /* CosmosLoginSDK.framework */,
+				FEC359DC6D0093480B337C21094A65CA /* EAccountHYSDK.framework */,
+				9DE0966449F96E33AA37D7CCB7829EFA /* TYRZSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,7 +546,7 @@
 		};
 		3F98ED2DE601B1B54DBCD8211B20D7A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75321AFA7863D3BC2D6EB2EAC674DEB6 /* CosmosLoginSDK.xcconfig */;
+			baseConfigurationReference = C4D5A820B49B83FA292CF775DE4E5408 /* CosmosLoginSDK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -760,7 +762,7 @@
 		};
 		97D24CC09E8B15100797F7BADB005B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75321AFA7863D3BC2D6EB2EAC674DEB6 /* CosmosLoginSDK.xcconfig */;
+			baseConfigurationReference = C4D5A820B49B83FA292CF775DE4E5408 /* CosmosLoginSDK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

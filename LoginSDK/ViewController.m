@@ -10,7 +10,8 @@
 #import "VerificationVC.h"
 
 #import <TYRZSDK/UACustomModel.h>
-#import <account_login_sdk_core/UniCustomModel.h>
+#import <account_login_sdk_core/UniAuthViewModel.h>
+
 #import "EAccountHYSDK/EAccountOpenPageSDK.h"
 
 #import "CosmosRequest.h"
@@ -127,21 +128,69 @@
 
 
 - (void)configUnicomLoginVC{
-    UniCustomModel *model = [[UniCustomModel alloc]init];
-    model.navColor = [UIColor whiteColor];
-    model.navReturnImg = [UIImage imageNamed:@"login_back_operator"];
-    model.logoImg = [UIImage imageNamed:@"root_logo"];
-    
-    model.logBtnText = @"一键登录";
-    model.logBtnColor = SRGBAlpha(56, 136, 255, 1);
-    model.logBtnTextColor = [UIColor whiteColor];
-    model.swithAccHidden = true;
+    UniAuthViewModel *model = [[UniAuthViewModel alloc]init];
+      model.naviBgColor = [UIColor whiteColor];
+      model.naviBackImage = [[UIImage imageNamed:@"unified_001"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+      model.webNaviBgColor = [UIColor whiteColor];
 
-    model.checkedImg = [UIImage createImageWithColor:[UIColor clearColor] size:CGSizeMake(1, 1)];
-    model.swithAccTextColor = SRGBAlpha(139, 143, 147, 1);
-    model.privacyTextColor = SRGBAlpha(33, 173, 248, 1);
-    model.appPrivacyUrl = @"https://cosmos.immomo.com";
-    [CosmosOperatorLoginManager configLoginVC:model type:CosmosOperatorsUnicom];
+      //验证手机号
+      model.appLogo = [UIImage imageNamed:@"login_038"];
+      struct UniRect logoRect;
+      logoRect.size = CGSizeMake(113.5, 21.5);
+      logoRect.portraitLeftXOffset = SCREEN_WIDTH/2.0 - 113.5/2.0;
+      logoRect.portraitTopYOffset = 111;
+      model.logoRect = logoRect;
+      
+      //运营商slogan
+      
+      struct UniRect sloganRect;
+      sloganRect.size = CGSizeMake(180, 18.5);
+      sloganRect.portraitLeftXOffset = SCREEN_WIDTH/2.0 - 180/2.0;
+      sloganRect.portraitTopYOffset = model.logoRect.portraitTopYOffset + model.logoRect.size.height + 12;
+      model.sloganRect = sloganRect;
+      
+      //手机号
+      
+      struct UniRect phoneRect;
+      phoneRect.size = CGSizeMake(SCREEN_WIDTH - 30, 46);
+      phoneRect.portraitLeftXOffset = 0;
+      phoneRect.portraitTopYOffset = model.sloganRect.portraitTopYOffset + model.sloganRect.size.height + 31.5;
+      model.phoneNumRect = phoneRect;
+      
+      //登录按钮
+      model.authButtonTitle = [[NSAttributedString alloc] initWithString:@"确认登录" attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:15], NSForegroundColorAttributeName: UIColor.whiteColor}];
+      model.authButtonCornerRadius = 4.0;
+      
+      
+      
+      struct UniRect authBtnRect;
+      authBtnRect.size = CGSizeMake(SCREEN_WIDTH - 75, 50);
+      authBtnRect.portraitLeftXOffset = 37.5;
+      model.authButtonRect = authBtnRect;
+      
+      //隐藏原有切换登录按钮
+      model.switchButtonHidden = YES;
+      
+    
+      
+     
+      
+      NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+      paragraphStyle.lineSpacing = 0;
+      paragraphStyle.alignment = NSTextAlignmentCenter;
+      paragraphStyle.paragraphSpacing = 0.0;
+      paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+      paragraphStyle.firstLineHeadIndent = 0.0;
+      model.auxiliaryPrivacyWords = @[@"继续表示同意", @"和", @"和", @"并授权获取本机号码"];
+      
+      struct UniRect privacyRect;
+      privacyRect.size = CGSizeMake(SCREEN_WIDTH - 75, 40);
+      privacyRect.portraitLeftXOffset = 37.5;
+      privacyRect.portraitTopYOffset = SCREEN_HEIGHT
+      - 40 - 37.5;
+      model.termsRect = privacyRect;
+      
+      [CosmosOperatorLoginManager configLoginVC:model type:CosmosOperatorsUnicom];
 
 }
 

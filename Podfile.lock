@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  CosmosLoginSDK: 1e81816091fbac8cf5e9332a21d71a9a0b4d4b4f
+  CosmosLoginSDK: bfe0e512c579efe4d3ce9bb2dcc9d7754f86e3b0
 
 PODFILE CHECKSUM: 85b912aa778a49e0f50733398d060dbbaf3a29d7
 

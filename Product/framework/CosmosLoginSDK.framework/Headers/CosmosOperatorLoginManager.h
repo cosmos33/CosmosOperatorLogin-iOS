@@ -128,8 +128,6 @@ typedef void (^LoginClickAction)(NSDictionary * _Nullable   resultDic, CosmosOpe
            actionCallBack:(LoginClickAction)clickAction
                  callBack:(LoginCallback)callBack;
 
-
-
 /**
  关闭授权页
  @param animation 是否有动画。（切换登录方式时，可以设置为false,然后弹出业务方的登录页）
@@ -137,6 +135,9 @@ typedef void (^LoginClickAction)(NSDictionary * _Nullable   resultDic, CosmosOpe
  */
 + (void)closeLoginVCWithAnimation:(BOOL)animation;
 
+
+/** 关闭授权页，添加回调*/
++ (void)closeLoginVCWithAnimation:(BOOL)animation completion:(void(^)(void))completion;
 
 @end
 

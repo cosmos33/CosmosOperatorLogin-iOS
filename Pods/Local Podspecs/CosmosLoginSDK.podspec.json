@@ -9,10 +9,10 @@
     "file": "LICENSE"
   },
   "authors": {
-    "wang.xuefei": "xue.xuefei"
+    "wang.xuefei": "wang.xuefei"
   },
   "source": {
-    "git": "git@git.wemomo.com:module/MomoVideoSDK.git",
+    "git": "https://github.com/cosmos33/CosmosOperatorLogin-iOS.git",
     "tag": "0.0.1"
   },
   "platforms": {

@@ -262,6 +262,10 @@ typedef void(^UniStopLoadingViewBlock)(UIView *containerView);
  */
 @property (nullable, nonatomic, copy) NSString *notCheckProtocolHint;
 
+
+
+@property (nonatomic, assign) BOOL defaultCheckBoxState;
+
 @end
 
 NS_ASSUME_NONNULL_END

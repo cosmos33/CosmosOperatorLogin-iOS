@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F3F156812D23A1E1FC9D9B2 /* Pods_LoginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036AA46BC70CFE04EE445834 /* Pods_LoginSDK.framework */; };
+		4DAB3F6B2448771500FB7443 /* EAccountAuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAB3F6A2448771500FB7443 /* EAccountAuthVC.xib */; };
 		AC0E4A99FA434A52DA4C0A25 /* Pods_LoginSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221B8E9565A31DCDF31CD939 /* Pods_LoginSDKTests.framework */; };
 		FA2A1D234B0FC839475713AB /* Pods_LoginSDKUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55693BA15BCE3EE4BB32A55E /* Pods_LoginSDKUITests.framework */; };
 		FA8E13F0239906E00032CB94 /* CosmosRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E13EF239906E00032CB94 /* CosmosRequest.m */; };
@@ -50,6 +51,7 @@
 		036AA46BC70CFE04EE445834 /* Pods_LoginSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1800F99A1BE6882BA9D389A1 /* Pods-LoginSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginSDK.release.xcconfig"; path = "Target Support Files/Pods-LoginSDK/Pods-LoginSDK.release.xcconfig"; sourceTree = "<group>"; };
 		221B8E9565A31DCDF31CD939 /* Pods_LoginSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAB3F6A2448771500FB7443 /* EAccountAuthVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EAccountAuthVC.xib; sourceTree = SOURCE_ROOT; };
 		55693BA15BCE3EE4BB32A55E /* Pods_LoginSDKUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginSDKUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E1A748528FA9971C748CA2 /* Pods-LoginSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginSDKTests.release.xcconfig"; path = "Target Support Files/Pods-LoginSDKTests/Pods-LoginSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		82BBD08C0656FC3D9997A055 /* Pods-LoginSDKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginSDKUITests.debug.xcconfig"; path = "Target Support Files/Pods-LoginSDKUITests/Pods-LoginSDKUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		FAC19C73235DBD430052F2E2 /* LoginSDK */ = {
 			isa = PBXGroup;
 			children = (
+				4DAB3F6A2448771500FB7443 /* EAccountAuthVC.xib */,
 				FA8E13EE239906E00032CB94 /* CosmosRequest.h */,
 				FA8E13EF239906E00032CB94 /* CosmosRequest.m */,
 				FAE16AA3238BDA3B00B553C8 /* UIImage+CosmosExtension.h */,
@@ -325,6 +328,7 @@
 				FAC19C84235DBD440052F2E2 /* LaunchScreen.storyboard in Resources */,
 				FAC19C81235DBD440052F2E2 /* Assets.xcassets in Resources */,
 				FAC19C7F235DBD430052F2E2 /* Main.storyboard in Resources */,
+				4DAB3F6B2448771500FB7443 /* EAccountAuthVC.xib in Resources */,
 				FAE16AAA238BE47700B553C8 /* VerificationVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

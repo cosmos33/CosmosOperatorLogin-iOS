@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- 用于预取号：
+ 用于预取号
  @param resultDic 三大运营商回调信息
  @param error 为空表示预取号失败（失败后调起原生登录）。
  */

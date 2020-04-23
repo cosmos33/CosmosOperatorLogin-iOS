@@ -122,6 +122,10 @@ typedef void (^LoginClickAction)(NSDictionary * _Nullable   resultDic, CosmosOpe
  
  @param callBack
  如果error为空，返回cosmos服务端获取手机号所需的字段
+ 
+ 
+ ps:暂不支持,电信mini登录页
+
  */
 + (void)openLoginVCFromVC:(UIViewController *)presentingVC
          unicomCustomView:(nullable void(^)(UIView *customAreaView))customViews

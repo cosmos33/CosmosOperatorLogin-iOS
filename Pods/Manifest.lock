@@ -1,5 +1,5 @@
 PODS:
-  - CosmosLoginSDK (0.0.1)
+  - CosmosLoginSDK (1.0.0)
 
 DEPENDENCIES:
   - CosmosLoginSDK (from `./`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  CosmosLoginSDK: bfe0e512c579efe4d3ce9bb2dcc9d7754f86e3b0
+  CosmosLoginSDK: d1e8c07c0760397ee6b215ad8c31e2cc7f106831
 
 PODFILE CHECKSUM: 85b912aa778a49e0f50733398d060dbbaf3a29d7
 

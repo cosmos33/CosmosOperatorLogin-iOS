@@ -14,9 +14,9 @@
 
 #import "EAccountHYSDK/EAccountOpenPageSDK.h"
 
-#import "CosmosRequest.h"
+#import "CosmosRequestMobile.h"
 
-#import <CosmosLoginSDK/NSDictionary+CosmosLoginSafe.h>
+//#import <CosmosLoginSDK/NSDictionary+CosmosLoginSafe.h>
 #import "LoginResultVC.h"
 
 #import <CosmosLoginSDK/CosmosOperatorLoginManager.h>
@@ -110,17 +110,14 @@
 - (void)configMobileLoginVC{
     UACustomModel *model = [[UACustomModel alloc]init];
     model.currentVC = self;
-    model.navColor = [UIColor whiteColor];
-    model.logoImg = [UIImage imageNamed:@"root_logo"];
-    model.navReturnImg = [UIImage imageNamed:@"login_back_operator"];
+   
     NSAttributedString *attr = [self.class attrWithFont:[UIFont systemFontOfSize:14.0] textColor:SRGBAlpha(139, 143, 147, 1) text:@"手机号登录"];
     model.privacyState = true;
-    model.switchAccText = attr;
+
     __weak typeof(self)weakself = self;
-    [model setAuthViewBlock:^(UIView *customView, CGRect logoFrame, CGRect numberFrame, CGRect sloganFrame, CGRect loginBtnFrame, CGRect checkBoxFrame, CGRect privacyFrame) {
-        
+    [model setAuthViewBlock:^(UIView *customView, CGRect numberFrame, CGRect loginBtnFrame, CGRect checkBoxFrame, CGRect privacyFrame) {
         weakself.thirdLoginBackView.frame = CGRectMake(CGRectGetWidth(customView.frame) / 2.0 - (CGRectGetWidth(weakself.thirdLoginBackView.frame)) / 2.0, CGRectGetMaxY(loginBtnFrame) + 77 / (SCREEN_HEIGHT / 667), CGRectGetWidth(weakself.thirdLoginBackView.frame), CGRectGetHeight(weakself.thirdLoginBackView.frame));
-        [customView addSubview:weakself.thirdLoginBackView];
+               [customView addSubview:weakself.thirdLoginBackView];
     }];
     
     [CosmosOperatorLoginManager configLoginVC:model type:CosmosOperatorsMobile];
@@ -296,20 +293,20 @@
     }
     __weak typeof(self)weakself = self;
    
-    [CosmosRequest requestWithUrlStr:k_cosmos_query_phone_num param:dic succeedCallBack:^(NSDictionary * _Nonnull dic) {
-        NSDictionary *dataDic =[dic cos_login_dictionaryForKey:@"data" defaultValue:@{}];
-                      
-               NSString *mobile = [dataDic cos_login_stringForKey:@"mobile" defaultValue:@"-1"];
-
-               if(![mobile isEqualToString:@"-1"]){
-                  dispatch_async(dispatch_get_main_queue(), ^{
-                      [weakself pushLoginResultVC:mobile];
-                  });
-               }else{
-                  dispatch_async(dispatch_get_main_queue(), ^{
-                      [weakself pushLoginResultVC:@""];
-                  });
-               }
+    [CosmosRequestMobile requestWithUrlStr:k_cosmos_query_phone_num param:dic succeedCallBack:^(NSDictionary * _Nonnull dic) {
+//        NSDictionary *dataDic =[dic cos_login_dictionaryForKey:@"data" defaultValue:@{}];
+//                      
+//               NSString *mobile = [dataDic cos_login_stringForKey:@"mobile" defaultValue:@"-1"];
+//
+//               if(![mobile isEqualToString:@"-1"]){
+//                  dispatch_async(dispatch_get_main_queue(), ^{
+//                      [weakself pushLoginResultVC:mobile];
+//                  });
+//               }else{
+//                  dispatch_async(dispatch_get_main_queue(), ^{
+//                      [weakself pushLoginResultVC:@""];
+//                  });
+//               }
     } failCallBack:^(NSError * _Nonnull error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakself pushLoginResultVC:@""];

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F3F156812D23A1E1FC9D9B2 /* Pods_LoginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036AA46BC70CFE04EE445834 /* Pods_LoginSDK.framework */; };
 		AC0E4A99FA434A52DA4C0A25 /* Pods_LoginSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221B8E9565A31DCDF31CD939 /* Pods_LoginSDKTests.framework */; };
+		FA0D1C4624519FC2004B3C76 /* EAccountOpenPage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA0D1C4524519FC2004B3C76 /* EAccountOpenPage.bundle */; };
 		FA2A1D234B0FC839475713AB /* Pods_LoginSDKUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55693BA15BCE3EE4BB32A55E /* Pods_LoginSDKUITests.framework */; };
 		FA8E13F0239906E00032CB94 /* CosmosRequestMobile.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E13EF239906E00032CB94 /* CosmosRequestMobile.m */; };
 		FAC19C76235DBD430052F2E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC19C75235DBD430052F2E2 /* AppDelegate.m */; };
@@ -56,6 +57,7 @@
 		927D310C5A8D3DDD2707744C /* Pods-LoginSDKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginSDKUITests.release.xcconfig"; path = "Target Support Files/Pods-LoginSDKUITests/Pods-LoginSDKUITests.release.xcconfig"; sourceTree = "<group>"; };
 		938125FE3A8D54EEA538D47B /* Pods-LoginSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginSDK.debug.xcconfig"; path = "Target Support Files/Pods-LoginSDK/Pods-LoginSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		E258585FF7FE89465D51E449 /* Pods-LoginSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-LoginSDKTests/Pods-LoginSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0D1C4524519FC2004B3C76 /* EAccountOpenPage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EAccountOpenPage.bundle; sourceTree = "<group>"; };
 		FA8E13EE239906E00032CB94 /* CosmosRequestMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CosmosRequestMobile.h; sourceTree = "<group>"; };
 		FA8E13EF239906E00032CB94 /* CosmosRequestMobile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CosmosRequestMobile.m; sourceTree = "<group>"; };
 		FAC19C71235DBD430052F2E2 /* 一键登录.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "一键登录.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,7 @@
 		FAC19C73235DBD430052F2E2 /* LoginSDK */ = {
 			isa = PBXGroup;
 			children = (
+				FA0D1C4524519FC2004B3C76 /* EAccountOpenPage.bundle */,
 				FA8E13EE239906E00032CB94 /* CosmosRequestMobile.h */,
 				FA8E13EF239906E00032CB94 /* CosmosRequestMobile.m */,
 				FAE16AA3238BDA3B00B553C8 /* UIImage+CosmosExtension.h */,
@@ -324,6 +327,7 @@
 			files = (
 				FAC19C84235DBD440052F2E2 /* LaunchScreen.storyboard in Resources */,
 				FAC19C81235DBD440052F2E2 /* Assets.xcassets in Resources */,
+				FA0D1C4624519FC2004B3C76 /* EAccountOpenPage.bundle in Resources */,
 				FAC19C7F235DBD430052F2E2 /* Main.storyboard in Resources */,
 				FAE16AAA238BE47700B553C8 /* VerificationVC.xib in Resources */,
 			);

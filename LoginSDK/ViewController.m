@@ -195,7 +195,7 @@
     
     EAccountOpenPageConfig *model = [[EAccountOpenPageConfig alloc]init];
     model.nibNameOfLoginVC = @"EAccountAuthVC";
-    model.EAccountBundleName = @"EAccountOpenPageResource";
+    model.EAccountBundleName = @"EAccountOpenPage";
 
     model.logBtnHeight = 44;
     model.logBtnCornerRadius = 22;

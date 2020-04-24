@@ -48,12 +48,12 @@ typedef void (^LoginClickAction)(NSDictionary * _Nullable   resultDic, CosmosOpe
 + (void)initSDK:(NSString *)appid;
 
 
-/** 获取当前手机卡的运营商类型 */
-+ (CosmosOperatorsType)getOperatorsType;
-
 /**
  支持三网，如果仅配置了 移动/联通/电信 其中1个或2个。如：仅配置了电信
  那么移动和联通使用电信的SDK预取号，如果成功。弹起授权页时，将弹起电信的授权页。
+ 
+ 由于双卡类型手机，系统api获取当前开启流量的运营商会有问题，所以建议开启(移动卡获取运营商获取到了联通，联通预取号失败，会尝试使用移动和电信。最终移动预取号成功)。
+ 
  默认不支持
  ps:SDK会尝试向配置了id的运营商预取号。如果失败，预取号就会回调，直到成功/尝试完毕都失败。
  */

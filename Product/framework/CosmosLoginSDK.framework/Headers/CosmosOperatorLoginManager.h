@@ -4,18 +4,12 @@
 //
 //  Created by wangxuefei on 2019/10/28.
 //  Copyright © 2019 MOMO. All rights reserved.
-//
+// 当前版本号: 1.0.6
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-typedef NS_ENUM(NSInteger,CosmosOperatorsType) {//sim卡信息
-    CosmosOperatorsOther = 0,//其它
-    CosmosOperatorsMobile,//移动
-    CosmosOperatorsUnicom,//联通
-    CosmosOperatorsTelecom//电信
-};
 
-
+#import "CosmosOperatorType.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  用于预取号
  @param resultDic 三大运营商回调信息
- @param error 为空表示预取号失败（失败后调起原生登录）。
+ @param error 为空表示预取号失败。
  */
 typedef void(^PreLoginCallback)( NSDictionary * _Nullable   resultDic,  NSError * _Nullable  error);
 
@@ -52,10 +46,8 @@ typedef void (^LoginClickAction)(NSDictionary * _Nullable   resultDic, CosmosOpe
  支持三网，如果仅配置了 移动/联通/电信 其中1个或2个。如：仅配置了电信
  那么移动和联通使用电信的SDK预取号，如果成功。弹起授权页时，将弹起电信的授权页。
  
- 由于双卡类型手机，系统api获取当前开启流量的运营商会有问题，所以建议开启(移动卡获取运营商获取到了联通，联通预取号失败，会尝试使用移动和电信。最终移动预取号成功)。
- 
  默认不支持
- ps:SDK会尝试向配置了id的运营商预取号。如果失败，预取号就会回调，直到成功/尝试完毕都失败。
+ ps:SDK会尝试向配置了id的运营商预取号。如果失败，预取号就会回调，直到成功/尝试完毕都失败，目前双卡手机默认开启，单卡手机默认关闭。
  */
 
 + (void)supportAllOperator:(BOOL)isSupport;

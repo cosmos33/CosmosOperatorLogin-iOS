@@ -11,6 +11,7 @@
 #endif
 
 #import "CosmosOperatorLoginManager.h"
+#import "CosmosOperatorType.h"
 
 FOUNDATION_EXPORT double CosmosLoginSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char CosmosLoginSDKVersionString[];

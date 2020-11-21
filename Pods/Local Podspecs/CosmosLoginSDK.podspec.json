@@ -1,6 +1,6 @@
 {
   "name": "CosmosLoginSDK",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "summary": "log",
   "description": "record log and upload",
   "homepage": "https://github.com/cosmos33",
@@ -13,17 +13,25 @@
   },
   "source": {
     "git": "https://github.com/cosmos33/CosmosOperatorLogin-iOS.git",
-    "tag": "1.0.0"
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "9.0"
   },
   "module_name": "CosmosLoginSDK",
   "static_framework": true,
-  "resources": "Product/bundle/*",
-  "libraries": [
-    "z.1.2.8",
-    "c++"
-  ],
-  "vendored_frameworks": "Product/framework/*"
+  "subspecs": [
+    {
+      "name": "Require",
+      "vendored_frameworks": "Product/framework/*",
+      "libraries": [
+        "z.1.2.8",
+        "c++"
+      ]
+    },
+    {
+      "name": "Optional-UI",
+      "resources": "Product/bundle/*"
+    }
+  ]
 }

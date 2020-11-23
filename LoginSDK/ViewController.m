@@ -50,6 +50,26 @@
 
 @end
 
+//#if INHOUSE
+//    [dict setString:@"e3b4031a4f2fa36cfae302ef1a6ff6ff" forKey:COSMOS_APPID];
+//    [dict setString:@"300011942267" forKey:CMCC_APPID];
+//    [dict setString:@"F8E752A962D86533777E4D8829528A56" forKey:CMCC_APPKEY];
+//
+//    [dict setString:@"99166000000000010980" forKey:UNICOM_APPID];
+//    [dict setString:@"97e42f746b0805b4fdbc98e6a0b1cb2b" forKey:UNICOM_APPKEY];
+//
+//    [dict setString:@"8252030384" forKey:TELECOM_APPID];
+//    [dict setString:@"2RaoE5d8sMdu2kzptnb3Pkq8weDVHK0I" forKey:TELECOM_APPKEY];
+//#else
+//    [dict setString:@"26e61d33cefc4e2cab629715b6aa260f" forKey:COSMOS_APPID];
+//    [dict setString:@"300011864272" forKey:CMCC_APPID];
+//    [dict setString:@"8825736C7A170AE23CE9F18EABB62E40" forKey:CMCC_APPKEY];
+//    [dict setString:@"99166000000000010947" forKey:UNICOM_APPID];
+//    [dict setString:@"05035dd09ef70facd5f2a4332bcff6a3" forKey:UNICOM_APPKEY];
+//    [dict setString:@"8237730180" forKey:TELECOM_APPID];
+//    [dict setString:@"FYwVl4qYj7N8xLMIZ2SiiQ1YJpFdswdF" forKey:TELECOM_APPKEY];
+//#endif
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -58,14 +78,23 @@
     self.navigationController.navigationBarHidden = true;
     
     [self configureUI];
-
-    [CosmosOperatorLoginManager initSDK:@""];
+#if INHOUSE
+    [CosmosOperatorLoginManager initSDK:@"e3b4031a4f2fa36cfae302ef1a6ff6ff"];
     
-    [CosmosOperatorLoginManager registerAppId:@"" appKey:@"" type:CosmosOperatorsMobile encrypType:nil];
+    [CosmosOperatorLoginManager registerAppId:@"300011942267" appKey:@"F8E752A962D86533777E4D8829528A56" type:CosmosOperatorsMobile encrypType:nil];
     
-    [CosmosOperatorLoginManager registerAppId:@"" appKey:@"" type:CosmosOperatorsUnicom encrypType:nil];
+    [CosmosOperatorLoginManager registerAppId:@"99166000000000010980" appKey:@"97e42f746b0805b4fdbc98e6a0b1cb2b" type:CosmosOperatorsUnicom encrypType:nil];
     
-    [CosmosOperatorLoginManager registerAppId:@"" appKey:@"" type:CosmosOperatorsTelecom encrypType:nil];
+    [CosmosOperatorLoginManager registerAppId:@"8252030384" appKey:@"2RaoE5d8sMdu2kzptnb3Pkq8weDVHK0I" type:CosmosOperatorsTelecom encrypType:nil];
+#else
+    [CosmosOperatorLoginManager initSDK:@"26e61d33cefc4e2cab629715b6aa260f"];
+    
+    [CosmosOperatorLoginManager registerAppId:@"300011864272" appKey:@"8825736C7A170AE23CE9F18EABB62E40" type:CosmosOperatorsMobile encrypType:nil];
+    
+    [CosmosOperatorLoginManager registerAppId:@"99166000000000010947" appKey:@"05035dd09ef70facd5f2a4332bcff6a3" type:CosmosOperatorsUnicom encrypType:nil];
+    
+    [CosmosOperatorLoginManager registerAppId:@"8237730180" appKey:@"FYwVl4qYj7N8xLMIZ2SiiQ1YJpFdswdF" type:CosmosOperatorsTelecom encrypType:nil];
+#endif
     
     [CosmosOperatorLoginManager supportAllOperator:true];
     

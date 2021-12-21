@@ -1,9 +1,5 @@
 //
-//  OLAuthViewModel.h
-//  OneLoginSDK
-//
-//  Created by NikoXu on 2019/3/25.
-//  Copyright © 2019 geetest. All rights reserved.
+//  UniAuthViewModel.h
 //
 
 #import <UIKit/UIKit.h>
@@ -15,23 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
  * @abstract 授权登录页面自定义视图，customAreaView为授权页面的view，如，可将三方登录添加到授权登录页面
  */
 typedef void(^UniCustomUIHandler)(UIView *customAreaView);
-
-typedef struct UniRect {
-    /**
-     导航栏隐藏时，为控件顶部到状态栏的距离；导航栏显示时，为控件顶部到导航栏底部的距离
-     */
-    CGFloat portraitTopYOffset;
-    
-    /**
-     控件的左边缘到屏幕左边缘的距离，默认为0
-     */
-    CGFloat portraitLeftXOffset;
-    
-    /**
-     控件大小，只有宽度、高度同时大于0，设置的size才会生效，否则为控件默认的size
-     */
-    CGSize size;
-} UniRect;
 
 /**
  * 授权页自定义Loading，会在点击登录按钮之后触发
@@ -46,6 +25,24 @@ typedef void(^UniLoadingViewBlock)(UIView *containerView);
  * containerView为loading的全屏蒙版view
  */
 typedef void(^UniStopLoadingViewBlock)(UIView *containerView);
+
+
+typedef struct UniRect {
+    /**
+     控件顶部到导航栏底部的距离
+     */
+    CGFloat portraitTopYOffset;
+    
+    /**
+     控件的左边缘到屏幕左边缘的距离，默认为0
+     */
+    CGFloat portraitLeftXOffset;
+    
+    /**
+     控件大小，只有宽度、高度同时大于0，设置的size才会生效，否则为控件默认的size
+     */
+    CGSize size;
+} UniRect;
 
 @interface UniAuthViewModel : NSObject
 
@@ -194,6 +191,12 @@ typedef void(^UniStopLoadingViewBlock)(UIView *containerView);
 @property (nonatomic, assign) CGSize checkBoxSize;
 
 /**
+ 考虑兼容性问题，这里增加勾选框的精确位置定义
+ */
+@property (nonatomic, assign) CGFloat checkBoxTopYOffset;
+@property (nonatomic, assign) CGFloat checkBoxLeftXOffset;
+
+/**
  隐私条款文字属性。默认基础文字灰色, 条款蓝色高亮, 12pt。
  */
 @property (nullable, nonatomic, strong) NSDictionary<NSAttributedStringKey, id> *privacyTermsAttributes;
@@ -219,6 +222,12 @@ typedef void(^UniStopLoadingViewBlock)(UIView *containerView);
  */
 @property (nullable, nonatomic, copy) NSArray<NSString *> *auxiliaryPrivacyWords;
 
+
+/**
+ 联通服务条款是否带书名号
+ */
+@property (nonatomic, assign) BOOL bookTitleMark;
+
 #pragma mark - Custom Area/自定义区域
 
 /**
@@ -233,17 +242,63 @@ typedef void(^UniStopLoadingViewBlock)(UIView *containerView);
 
 #pragma mark - Background Image/授权页面背景图片
 
+/**
+ 授权页背景颜色。默认白色。
+ */
+@property (nullable, nonatomic, strong) UIColor *backgroundColor;
+
+
+#pragma mark - Popup
+
+/**
+ * 是否为弹窗模式
+ */
+@property (nonatomic, assign) BOOL isPopup;
+
+/**
+ 弹窗 位置及大小。弹窗模式时，x轴偏移只支持portraitLeftXOffset和landscapeLeftXOffset。
+ */
+@property (nonatomic, assign) UniRect popupRect;
+
+/**
+ 弹窗圆角，默认为6。
+ */
+@property (nonatomic, assign) CGFloat popupCornerRadius;
+
+/**
+ 当只需要设置弹窗的部分圆角时，通过popupCornerRadius设置圆角大小，通过popupRectCorners设置需要设置圆角的位置。
+ popupRectCorners数组元素不超过四个，超过四个时，只取前四个。比如，要设置左上和右上为圆角，则传值：@[@(UIRectCornerTopLeft), @(UIRectCornerTopRight)]
+ */
+@property (nullable, nonatomic, strong) NSArray<NSNumber *> * popupRectCorners;
+
+/**
+ 弹窗关闭按钮图片，弹窗关闭按钮的尺寸跟图片尺寸保持一致。
+ 弹窗关闭按钮位于弹窗右上角，目前只支持设置其距顶部偏移和距右边偏移。
+ */
+@property (nullable, nonatomic, strong) UIImage *closePopupImage;
+
+/**
+ 弹窗关闭按钮距弹窗顶部偏移。
+ */
+@property (nullable, nonatomic, strong) NSNumber *closePopupTopOffset;
+
+/**
+ 弹窗关闭按钮距弹窗右边偏移。
+*/
+@property (nullable, nonatomic, strong) NSNumber *closePopupRightOffset;
 #pragma mark - Loading
 
 /**
  * 授权页面，自定义加载进度条，点击登录按钮之后的回调
+ *  Token流程优化后，该属性废弃！！！
  */
-@property (nonatomic, copy, nullable) UniLoadingViewBlock loadingViewBlock;
+@property (nullable, nonatomic, copy) UniLoadingViewBlock loadingViewBlock;
 
 /**
- * 授权页面，停止自定义加载进度条，调用[OneLogin stopLoading]之后的回调
+ * 授权页面，停止自定义加载进度条
+ *  Token流程优化后，该属性废弃！！！
  */
-@property (nonatomic, copy, nullable) UniStopLoadingViewBlock stopLoadingViewBlock;
+@property (nullable, nonatomic, copy) UniStopLoadingViewBlock stopLoadingViewBlock;
 
 #pragma mark - WebViewController Navigation/服务条款页面导航栏
 
@@ -265,6 +320,8 @@ typedef void(^UniStopLoadingViewBlock)(UIView *containerView);
 
 
 @property (nonatomic, assign) BOOL defaultCheckBoxState;
+
+@property (nonatomic, assign) BOOL debugMode;
 
 @end
 
